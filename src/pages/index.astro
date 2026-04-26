@@ -1,0 +1,30 @@
+---
+import Navbar from '../components/Navbar.astro';
+import HolographicDesktop from '../components/HolographicDesktop.react';
+import SkillOracle from '../components/SkillOracle.svelte';
+import { ViewTransitions } from 'astro:transitions';
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NEXUS OS — Supreme Portfolio Universe</title>
+  <ViewTransitions />
+</head>
+<body class="bg-black text-white overflow-hidden">
+  <Navbar />
+  
+  <!-- 3D Holographic OS Desktop -->
+  <HolographicDesktop client:load />
+  
+  <!-- Floating Skill Oracle (Surprise AI Element) -->
+  <SkillOracle client:load />
+  
+  <div class="fixed bottom-6 left-6 text-[10px] font-mono tracking-[2px] text-cyan-400/60">
+    NEXUS OS v∞ • ALL 12 SUPREME PORTFOLIOS UNLOCKED • BUILT WITH LOVE & PRECISION
+  </div>
+</body>
+</html>
+
