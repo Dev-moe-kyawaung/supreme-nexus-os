@@ -1,0 +1,5 @@
+npm create astro@latest supreme-nexus-os -- --template minimal
+cd supreme-nexus-os
+npm install three @react-three/fiber @react-three/drei gsap lucide-react @astrojs/react @astrojs/svelte
+npm run dev
+
